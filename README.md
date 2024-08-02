@@ -1,5 +1,5 @@
 # Agrinho-Programa-o-2024
-Projeto para concorrer ao concurso Agrinho 2024.Ele se trata das relações entre o campo e a tecnologia, bem como quais oportunidades podem ser adquiridas com essas transformações.
+Projeto para concorrer ao concurso Agrinho 2024.Ele se trata das relações entre o campo e a tecnologia, bem como quais oportunidades surgem dessas transformações.
 
 # **A tecnologia e o campo.**
 ### Nome: Antonio Ramalho.
