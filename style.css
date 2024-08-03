@@ -73,6 +73,10 @@ h3 {
     font-family: var(--titulos);
 }
 
+p {
+    text-indent: 25px;
+}
+
 /* ESTILO DO CABEÇARIO */
 
 header {
@@ -137,7 +141,7 @@ header.rolagem .btnColorido a {
     color: white;
 }
 
-header nav ul li a:hover {
+header nav.menuDesktop ul li a:hover {
     color: var(--cor-03);
     transform: scale(1.05);
     cursor: pointer;
@@ -171,6 +175,75 @@ header.rolagem .btnMenuEscondido:hover .menuEscondido {
 
 .menuEscondido a {
     padding: 10px 8px;
+}
+
+/* ESTILO DO MENU MOBILE */
+
+.btnAbrirMenu {
+    color: var(--cor-01);
+    font-size: 35px;
+}
+
+.overlayMenu {
+    background-color: #000000a7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    display: none;
+}
+
+header .menuMobile {
+    background-color: var(--cor-04);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 0%;
+    overflow: hidden;
+    transition: .2s;
+}
+
+header .menuMobile.abrir-menu {
+    width: 70%;
+}
+
+header .menuMobile.abrir-menu~.overlayMenu {
+    display: block;
+}
+
+header .menuMobile nav ul {
+    display: block;
+    text-align: right;
+}
+
+header .menuMobile nav ul li {
+    margin: 0;
+}
+
+header .menuMobile nav ul li a {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 5%;
+    color: white;
+    transition: .2s;
+}
+
+header .menuMobile nav ul li a:hover {
+    background-color: var(--cor-01);
+    color: black;
+}
+
+header .menuMobile .btnHanburguer i {
+    color: var(--cor-01);
+    font-size: 30px;
+}
+
+header .menuMobile .btnHanburguer {
+    padding: 20px 8%;
 }
 
 /* ESTILO DO TOPO DO SITE */
@@ -400,7 +473,7 @@ header.rolagem .btnMenuEscondido:hover .menuEscondido {
     flex-wrap: wrap;
     z-index: 1;
     background-color: var(--cor-04);
-    margin: 100px 0px;
+    margin: 50px 0px;
 }
 
 #biotecnologia .txtBiotecnologia {
@@ -430,7 +503,7 @@ header.rolagem .btnMenuEscondido:hover .menuEscondido {
     position: relative;
     width: 280px;
     height: 400px;
-    margin: 30px;
+    margin: 30px auto;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, .5);
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -459,7 +532,7 @@ header.rolagem .btnMenuEscondido:hover .menuEscondido {
 
 .cartoesBiotecnologia .cartaoBiotecnologia .conteudoCartaoBiotecnologia h2 {
     position: absolute;
-    top: -80px;
+    top: -20px;
     height: 30px;
     font-size: 8em;
     color: rgba(255, 255, 255, 0.05);

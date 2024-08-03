@@ -42,3 +42,24 @@ function proximaImagem() {
     }
     document.getElementById("radio" + count).checked = true;
 }
+
+// Menu mobile;
+
+let btnMenu = document.getElementById('btnMenu');
+let Menu = document.getElementById('menuMobile');
+let overlay = document.getElementById('overlayMenu');
+
+btnMenu.addEventListener('click', () => {
+    Menu.classList.add('abrir-menu')
+}
+)
+
+Menu.addEventListener('click', () => {
+    Menu.classList.remove('abrir-menu')
+}
+)
+
+overlay.addEventListener('click', () => {
+    Menu.classList.remove('abrir-menu')
+}
+)

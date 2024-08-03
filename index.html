@@ -7,6 +7,7 @@
     <title>Do campo a cidade, as oportunidades que a tecnologia trás</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="responsive.css" media="screen">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
             <div class="flex">
                 <img src="https://assets.mockflow.com/app/wireframepro/company/Cf74c9629d65d449796563b7330b09f73/projects/MinPffx6Sh/images/Mae0728075235f27da27235d2eaf86e381720389736205"
                     alt="logo">
-                <nav>
+                <nav class="menuDesktop">
                     <ul>
                         <li><a href="#">Inicío</a></li>
                         <li><a href="#contextoHistorico">Contexto historico</a></li>
@@ -27,13 +28,37 @@
                                         class="fa-solid fa-hand-point-right"></i>Oportunidades</a>
                                 <a href="#carrossel"><i class="fa-solid fa-hand-point-right"></i>Agricultura 4.0 e
                                     5.0</a>
-                                <a href="configurações.html"><i
+                                <a href="configurações.html"> <i
                                         class="fa-solid fa-hand-point-right"></i>Configurações</a>
                             </div>
                         </li>
                     </ul>
                 </nav>
                 <button class="btnColorido"><a href="informações.html">Informações</a></button>
+
+                <div class="btnAbrirMenu" id="btnMenu"> <i class="fa-solid fa-list"></i></div>
+
+                <div class="menuMobile" id="menuMobile">
+                    <div class="btnHanburguer">
+                        <i class="fa-solid fa-x"></i>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Inicío</a></li>
+                            <li><a href="#contextoHistorico">Contexto historico</a></li>
+                            <li><a href="#tecnologias">Tecnologias</a></li>
+                            <li><a href="#biotecnologia">Biotecnologia</a></li>
+                            <li><a href="#oportunidadesProfissionais">Oportunidades</a></li>
+                            <li><a href="#carrossel">Agricultura 4.0 e 5.0</a></li>
+                            <li><a href="configurações.html">Configurações</a></li>
+                            <li><a href="#">Créditos</a></li>
+                            <li><a href="#">Informações</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="overlayMenu" id="overlayMenu"></div>
+
             </div>
         </div>
     </header> <!--Final do header -->

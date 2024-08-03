@@ -1,0 +1,123 @@
+@media screen and (max-width: 1290px) {
+
+    /* ESTILO DO HEADER E TOPO DO SITE */
+
+    .interface {
+        padding: 40px;
+    }
+
+    header .interface {
+        padding: 15px;
+    }
+
+    header .menuDesktop {
+        display: none;
+    }
+
+    header button {
+        display: none;
+    }
+
+    header.rolagem {
+        padding: 10px 40px;
+    }
+
+    #topoDoSite h1 {
+        padding-top: 65%;
+    }
+
+    /* ESTILO DO CONTEXTO HISTORICO */
+
+    #contextoHistorico .interface .flex {
+        display: block;
+        margin: 0px auto;
+    }
+
+    #contextoHistorico .flex img {
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    #contextoHistorico .txtHistorico {
+        padding: 0px;
+    }
+
+    /* ESTILO DE BIOTECNOLOGIA */
+
+    #biotecnologia .txtBiotecnologia {
+        padding: 30px;
+    }
+
+    #biotecnologia .txtBiotecnologia p {
+        text-align: justify;
+    }
+
+    #biotecnologia .cartoesBiotecnologia {
+        display: block;
+    }
+
+    /* ESTILOS DAS OPORTUNIDADES */
+
+    #oportunidadesProfissionais {
+        background-color: white;
+        margin: 50px 0;
+    }
+
+    #oportunidadesProfissionais .txtOportunidades {
+        box-shadow: none;
+    }
+
+    #oportunidadesProfissionais .txtOportunidades h1 {
+        padding-top: 0px;
+        padding-bottom: 30px;
+        padding-left: 0px;
+        text-align: justify;
+    }
+
+    #oportunidadesProfissionais .txtOportunidades p {
+        padding: 0px;
+    }
+
+    /* ESTILO DO CARROSSEL */
+
+    #carrossel .txtCarrossel {
+        padding: 40px;
+    }
+
+    #carrossel .txtCarrossel h1 {
+        font-size: 30px;
+    }
+
+    #carrossel .txtCarrossel p {
+        font-size: 20px;
+        padding-bottom: 30px;
+        text-align: justify;
+    }
+
+    /* Footer */
+
+    footer nav {
+        display: none;
+    }
+
+    footer #rodapeSuperior .interface {
+        padding: 20px;
+    }
+
+    footer #rodapeSuperior .BotoesRodape {
+        margin-top: 0;
+    }
+
+    footer #rodapeInferior a {
+        display: none;
+    }
+
+    footer #rodapeInferior .interface {
+        padding: 20px;
+    }
+
+    footer #rodapeInferior p {
+        font-size: 10px;
+        margin: 0 auto;
+    }
+}
