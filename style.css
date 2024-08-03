@@ -182,6 +182,7 @@ header.rolagem .btnMenuEscondido:hover .menuEscondido {
 .btnAbrirMenu {
     color: var(--cor-01);
     font-size: 35px;
+    display: none;
 }
 
 .overlayMenu {
