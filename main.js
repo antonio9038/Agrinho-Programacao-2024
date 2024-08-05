@@ -31,7 +31,95 @@ function moverCartao() {
     });
 }
 
-// Confiração do carrossel;
+// Configuração para mobile dos cards tecnologia;
+
+function redimensionarCards() {
+    if (window.matchMedia("(max-width: 1290px)").matches) {
+
+        let base = 0;
+
+        document.getElementById('proximoCard').addEventListener('click', function () {
+            const slidesCard = document.querySelectorAll('.cardSlide');
+            if (base < slidesCard.length - 1) {
+                base++;
+                moverCartao();
+            }
+        });
+
+        document.getElementById('cardAnterior').addEventListener('click', function () {
+            if (base > 0) {
+                base--;
+                moverCartao();
+            }
+        });
+
+        // Colocando e modo scroll
+
+
+        document.getElementById('proximoCard').addEventListener('scroll', function () {
+            const slidesCard = document.querySelectorAll('.cardSlide');
+            if (base < slidesCard.length - 1) {
+                base++;
+                moverCartao();
+            }
+        });
+
+        document.getElementById('cardAnterior').addEventListener('scroll', function () {
+            if (base > 0) {
+                base--;
+                moverCartao();
+            }
+        });
+
+        function moverCartao() {
+            const slidesCard = document.querySelectorAll('.cardSlide');
+            slidesCard.forEach(cardSlide => {
+                cardSlide.style.marginLeft = `-${base * 300}px`;
+            });
+        }
+    }
+}
+
+window.addEventListener('resize', redimensionarCards);
+redimensionarCards();
+
+// Configuração dos botoes cards tecnologia;
+
+const botaoAnterior = document.getElementById('cardAnterior');
+const primeiroSlide = document.getElementById('primeiro');
+
+const observador = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.target === primeiroSlide) {
+            if (entry.isIntersecting) {
+                botaoAnterior.style.display = 'none';
+            } else {
+                botaoAnterior.style.display = 'block';
+            }
+        }
+    });
+});
+
+observador.observe(primeiroSlide);
+
+const botaoProximo = document.getElementById('proximoCard');
+const ultimoSlide = document.getElementById('ultimo');
+
+const observadorUltimo = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.target === ultimoSlide) {
+            if (entry.isIntersecting) {
+                botaoProximo.style.display = 'none';
+            } else {
+                botaoProximo.style.display = 'block';
+            }
+        }
+    });
+});
+
+observadorUltimo.observe(ultimoSlide);
+
+// Configuração do carrossel;
 
 let count = 1;
 document.getElementById("radio1").checked = true;
