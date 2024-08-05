@@ -127,14 +127,11 @@ header nav ul li a {
     display: block;
     color: black;
     font-size: 18px;
+    font-weight: bold;
 }
 
 header.rolagem a {
     color: white;
-}
-
-header.rolagem a:hover {
-    color: var(--cor-01);
 }
 
 header.rolagem .btnColorido a {
@@ -142,10 +139,14 @@ header.rolagem .btnColorido a {
 }
 
 header nav.menuDesktop ul li a:hover {
-    color: var(--cor-03);
+    color: var(--cor-04);
     transform: scale(1.05);
     cursor: pointer;
     transition: .3s;
+}
+
+header.rolagem nav.menuDesktop ul li a:hover {
+    color: var(--cor-01);
 }
 
 header i {

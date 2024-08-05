@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/* FONTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Magra:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --cor-01: #00FA9F;
+    --cor-02: #23CF90;
+    --cor-03: #37A57D;
+    --cor-04: #3E7B62;
+    --cor-05: #AEC7B9;
+
+    --textos: 'magra';
+    --titulos: 'roboto';
+}
+
+/* ESTILO DO HEADER */
+
+body {
+    background-color: var(--cor-05);
+}
+
+header .interface {
+    padding: 0px 30px;
+}
+
+#creditos {
+    padding-top: 15%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#creditos .container {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, .5);
+    margin-bottom: 100px;
+    text-align: justify;
+}
+
+#creditos .txtInformacoes {
+    padding: 50px;
+}
+
+#creditos .txtInformacoes p {
+    padding: 30px 0px;
+    text-indent: 25px;
+}
+
+#creditos .txtInformacoes ul {
+    margin-left: 25px;
+    margin-bottom: 30px;
+}
+
+#creditos .txtInformacoes ol {
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+#creditos .txtInformacoes ol li:not(:last-child) {
+    margin-bottom: 10px;
+}

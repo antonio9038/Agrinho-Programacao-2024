@@ -18,7 +18,7 @@
         display: block;
     }
 
-    header button {
+    header button.desktop1 {
         display: none;
     }
 
@@ -123,5 +123,21 @@
     footer #rodapeInferior p {
         font-size: 10px;
         margin: 0 auto;
+    }
+}
+
+/* PAGINA DE INFORMAÇÕES */
+
+@media screen and (max-width: 1290px) {
+
+    #creditos {
+        padding-top: 60%;
+    }
+
+    #creditos .container {
+        box-shadow: none;
+        border-radius: 0px;
+        text-align: justify;
+        margin-bottom: 0px;
     }
 }
