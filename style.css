@@ -303,13 +303,14 @@ header .menuMobile .btnHanburguer {
 #tecnologias {
     width: 100%;
     background-color: var(--cor-05);
-    height: 600px;
+    height: 650px;
 }
 
 #tecnologias .container {
     margin: 0 auto;
-    width: 80%;
+    width: 40%;
     overflow: hidden;
+    padding: 20px;
 }
 
 #tecnologias .interface {
@@ -323,14 +324,34 @@ header .menuMobile .btnHanburguer {
     margin-bottom: 40px;
 }
 
+#tecnologias .container #cardAnterior,
+#proximoCard {
+    font-size: 60px;
+    background: none;
+    border: none;
+    transition: .2s;
+    cursor: pointer;
+    position: absolute;
+}
+
+#tecnologias .container #cardAnterior:hover,
+#proximoCard:hover {
+    color: var(--cor-01);
+    transform: scale(1.10);
+}
+
+#tecnologias .container #cardAnterior {
+    left: 70px;
+}
+
+#tecnologias .container #proximoCard {
+    right: 70px;
+}
+
 #tecnologias .cardSlides {
     display: flex;
     align-items: center;
-    width: 290%;
-}
-
-#tecnologias input {
-    display: none;
+    width: 630%;
 }
 
 #tecnologias .cardSlide {
@@ -341,10 +362,7 @@ header .menuMobile .btnHanburguer {
     border: 1px solid rgba(255, 255, 255, 0.5);
     position: relative;
     transition: 1s;
-    margin: 20px 55px;
-}
-
-#tecnologias .cardSlide .cardSlide .primeiro {
+    margin: 40px auto;
     margin-left: 40px;
 }
 
@@ -404,68 +422,6 @@ header .menuMobile .btnHanburguer {
 #tecnologias .cardSlide button a {
     color: black;
     text-decoration: none;
-}
-
-.navegacaoManualCard {
-    position: absolute;
-    width: 71%;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.manualBtnCard {
-    border: 2px solid var(--cor-04);
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .5s;
-}
-
-.manualBtnCard:not(:last-child) {
-    margin-right: 20px;
-}
-
-.manualBtnCard:hover {
-    background-color: var(--cor-04);
-}
-
-#CardRadio1:checked~.primeiro {
-    margin-left: 2%;
-}
-
-#CardRadio2:checked~.primeiro {
-    margin-left: -32%;
-}
-
-#CardRadio3:checked~.primeiro {
-    margin-left: -64%;
-}
-
-.navegacaoAutoCard {
-    position: absolute;
-    width: 71%;
-    display: flex;
-    justify-content: center;
-    margin-top: 473px;
-}
-
-.navegacaoAutoCard div {
-    border: 2px solid var(--cor-04);
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .5s;
-}
-
-.navegacaoAutoCard div:not(:last-child) {
-    margin-right: 20px;
-}
-
-#CardRadio1:checked~.navegacaoAutoCard .cardAutoBtn1,
-#CardRadio2:checked~.navegacaoAutoCard .cardAutoBtn2,
-#CardRadio3:checked~.navegacaoAutoCard .cardAutoBtn3 {
-    background-color: var(--cor-04);
 }
 
 /* ESTILO DE BIOTECNOLOGIA */

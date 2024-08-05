@@ -7,21 +7,28 @@ window.addEventListener("scroll", function () {
 
 // Configuração do carrossel card;
 
-let contador = 1;
-document.getElementById("CardRadio1").checked = true;
+let base = 0;
 
-setInterval(
-    function () {
-        proximoCartao();
-    }, 5000
-)
-
-function proximoCartao() {
-    contador++;
-    if (contador > 3) {
-        contador = 1;
+document.getElementById('proximoCard').addEventListener('click', function () {
+    const slidesCard = document.querySelectorAll('.cardSlide');
+    if (base < slidesCard.length - 1) {
+        base++;
+        moverCartao();
     }
-    document.getElementById("CardRadio" + contador).checked = true;
+});
+
+document.getElementById('cardAnterior').addEventListener('click', function () {
+    if (base > 0) {
+        base--;
+        moverCartao();
+    }
+});
+
+function moverCartao() {
+    const slidesCard = document.querySelectorAll('.cardSlide');
+    slidesCard.forEach(cardSlide => {
+        cardSlide.style.marginLeft = `-${base * 500}px`;
+    });
 }
 
 // Confiração do carrossel;
