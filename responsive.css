@@ -46,44 +46,6 @@
         padding: 0px;
     }
 
-    /* ESTILO DAS TECNOLOGIAS */
-
-    #tecnologias {
-        height: 700px;
-    }
-
-    #tecnologias .container {
-        width: 100%;
-        margin-left: 0px;
-    }
-
-    #tecnologias .cardSlide {
-        margin-left: 0px;
-        width: 240px;
-        height: 470px;
-    }
-
-    #tecnologias .cardSlide:hover {
-        transform: none;
-    }
-
-    #tecnologias .cardSlides {
-        width: 810%;
-    }
-
-    #tecnologias .container #cardAnterior,
-    #proximoCard {
-        font-size: 40px;
-    }
-
-    #tecnologias .container #cardAnterior {
-        left: 10px;
-    }
-
-    #tecnologias .container #proximoCard {
-        right: 10px;
-    }
-
     /* ESTILO DE BIOTECNOLOGIA */
 
     #biotecnologia .txtBiotecnologia {
@@ -92,6 +54,12 @@
 
     #biotecnologia .txtBiotecnologia p {
         text-align: justify;
+    }
+
+    #biotecnologia .cartoesBiotecnologia .cartaoBiotecnologia {
+        width: 300px;
+        height: 460px;
+        margin: 40px auto;
     }
 
     #biotecnologia .cartoesBiotecnologia {

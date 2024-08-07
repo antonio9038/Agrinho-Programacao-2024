@@ -31,58 +31,6 @@ function moverCartao() {
     });
 }
 
-// Configuração para mobile dos cards tecnologia;
-
-function redimensionarCards() {
-    if (window.matchMedia("(max-width: 1290px)").matches) {
-
-        let base = 0;
-
-        document.getElementById('proximoCard').addEventListener('click', function () {
-            const slidesCard = document.querySelectorAll('.cardSlide');
-            if (base < slidesCard.length - 1) {
-                base++;
-                moverCartao();
-            }
-        });
-
-        document.getElementById('cardAnterior').addEventListener('click', function () {
-            if (base > 0) {
-                base--;
-                moverCartao();
-            }
-        });
-
-        // Colocando e modo scroll
-
-
-        document.getElementById('proximoCard').addEventListener('scroll', function () {
-            const slidesCard = document.querySelectorAll('.cardSlide');
-            if (base < slidesCard.length - 1) {
-                base++;
-                moverCartao();
-            }
-        });
-
-        document.getElementById('cardAnterior').addEventListener('scroll', function () {
-            if (base > 0) {
-                base--;
-                moverCartao();
-            }
-        });
-
-        function moverCartao() {
-            const slidesCard = document.querySelectorAll('.cardSlide');
-            slidesCard.forEach(cardSlide => {
-                cardSlide.style.marginLeft = `-${base * 300}px`;
-            });
-        }
-    }
-}
-
-window.addEventListener('resize', redimensionarCards);
-redimensionarCards();
-
 // Configuração dos botoes cards tecnologia;
 
 const botaoAnterior = document.getElementById('cardAnterior');

@@ -199,7 +199,7 @@ header.rolagem .btnMenuEscondido:hover .menuEscondido {
 
 header .menuMobile {
     background-color: var(--cor-04);
-    height: 100vh;
+    height: 120vh;
     position: fixed;
     top: 0;
     right: 0;
@@ -430,67 +430,39 @@ header .menuMobile .btnHanburguer {
 
 .cartoesBiotecnologia .cartaoBiotecnologia {
     position: relative;
-    width: 280px;
+    width: 400px;
     height: 400px;
-    margin: 30px auto;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, .5);
+    margin: 40px;
     border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: transparent;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+    transition: .5s;
+    margin-left: 30px;
+}
+
+.cartoesBiotecnologia .cartaoBiotecnologia:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(78, 78, 78, 0.552);
+}
+
+.cartoesBiotecnologia .cartaoBiotecnologia .conteudoCartaoBiotecnologia  i{
+    font-size: 80px;
+    margin-bottom: 40px;
 }
 
 .cartoesBiotecnologia .cartaoBiotecnologia .conteudoCartaoBiotecnologia {
-    padding: 20px;
+    color: white;
     text-align: center;
-    transform: translateY(100px);
-    opacity: 0;
-    transition: 0.5s;
-    cursor: pointer;
+    margin: 0px 40px;
+}
+
+.cartoesBiotecnologia .cartaoBiotecnologia .conteudoCartaoBiotecnologia p{
     text-align: justify;
-}
-
-.cartoesBiotecnologia .cartaoBiotecnologia:hover .conteudoCartaoBiotecnologia {
-    transform: translate(0px);
-    opacity: 1;
-}
-
-.cartoesBiotecnologia .cartaoBiotecnologia .conteudoCartaoBiotecnologia h2 {
-    position: absolute;
-    top: -20px;
-    height: 30px;
-    font-size: 8em;
-    color: rgba(255, 255, 255, 0.05);
-    pointer-events: none;
-}
-
-.cartoesBiotecnologia .cartaoBiotecnologia .conteudoCartaoBiotecnologia h3 {
-    font-size: 1.8em;
-    color: white;
-    z-index: 1;
-}
-
-.cartoesBiotecnologia .cartaoBiotecnologia .conteudoCartaoBiotecnologia p {
-    font-size: 1em;
-    color: white;
-    font-weight: 300;
-}
-
-.cartoesBiotecnologia .cartaoBiotecnologia .conteudoCartaoBiotecnologia a {
-    position: relative;
-    display: inline-block;
-    padding: 12px 20px;
-    margin-top: 20px;
-    background-color: white;
-    color: black;
-    font-weight: 500;
-    text-decoration: none;
-    border-radius: 20px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
 }
 
 /* ESTILO DO TEXTO OPORTUNIDADES */
