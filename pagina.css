@@ -53,7 +53,7 @@ li {
     cursor: pointer;
 }
 
-#agricultura .quadroVs:hover{
+#agricultura .quadroVs:hover {
     transform: scale(1.05);
 }
 
@@ -75,6 +75,7 @@ li {
 
 #agricultura .primeiroQuadro {
     width: 45%;
+    padding: 40px;
 }
 
 #agricultura .primeiroQuadro .txtPrimeiroQuadro {
@@ -119,8 +120,83 @@ li {
     max-height: 1580px;
 }
 
-#agriculturaEnergia .txt h1, h2{
+#agriculturaEnergia .txt h1,
+h2 {
     padding: 30px;
+}
+
+/* IMPACTOS AMBIENTAIS */
+
+#impactosAmbientais {
+    max-width: 100%;
+    flex-wrap: wrap;
+    z-index: 1;
+    background-color: var(--cor-04);
+    margin: 50px 0px;
+}
+
+#impactosAmbientais .txtMeioAmbiente {
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
+
+#impactosAmbientais .txtMeioAmbiente h1 {
+    color: var(--cor-01);
+}
+
+#impactosAmbientais p {
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+#impactosAmbientais .cartoesNatureza {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.cartoesNatureza .cartaoMeioAmbiente {
+    position: relative;
+    width: 400px;
+    height: 420px;
+    margin: 40px;
+    border-radius: 15px;
+    background-color: transparent;
+    overflow: hidden;
+    position: relative;
+    transition: .5s;
+    cursor: pointer;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.cartoesNatureza .cartaoMeioAmbiente:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(78, 78, 78, 0.552);
+    background-color: var(--cor-05);
+}
+
+.cartoesNatureza .cartaoMeioAmbiente i {
+    font-size: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--cor-01);
+}
+
+.cartoesNatureza .cartaoMeioAmbiente .conteudoCartaoNatureza {
+    text-align: justify;
+    padding: 30px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: .5s;
+}
+
+.cartoesNatureza .cartaoMeioAmbiente:hover .conteudoCartaoNatureza {
+    transform: translate(0px);
+    opacity: 1;
 }
 
 /* ESTILO DOS DESAFIOS */
@@ -129,4 +205,10 @@ li {
     width: 600px;
     padding-right: 50px;
     text-align: justify;
+}
+
+#desafios #videoExterno {
+    color: var(--cor-01);
+    text-decoration: none;
+    font-size: 16px;
 }

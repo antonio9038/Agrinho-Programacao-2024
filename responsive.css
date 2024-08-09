@@ -1,4 +1,4 @@
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 1000px) {
 
     /* ESTILO DO HEADER E TOPO DO SITE */
 
@@ -44,6 +44,39 @@
 
     #contextoHistorico .txtHistorico {
         padding: 0px;
+    }
+
+    /* CARROSSEL CARD */
+
+    #tecnologias .interface {
+        padding: 40px 30px;
+    }
+
+    #tecnologias .container {
+        width: 100%;
+    }
+
+    #tecnologias .cardSlides {
+        width: 800%;
+    }
+
+    #tecnologias .cardSlide {
+        width: 290px;
+        margin-left: 0px;
+        height: 425px;
+    }
+
+    #tecnologias .container #proximoCard {
+        right: 10px;
+    }
+
+    #tecnologias .container #cardAnterior,
+    #proximoCard {
+        font-size: 40px;
+    }
+
+    #tecnologias .container #cardAnterior {
+        left: 10px;
     }
 
     /* ESTILO DE BIOTECNOLOGIA */
@@ -134,7 +167,7 @@
 
 /* PAGINA DE INFORMAÇÕES */
 
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 1000px) {
 
     #creditos {
         padding-top: 60%;
@@ -150,7 +183,7 @@
 
 /* PAGINA */
 
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 1000px) {
 
     /* AGRICULTURA */
 
@@ -161,21 +194,38 @@
     #agricultura img {
         width: 100%;
         margin-left: 0px;
-    }
-
-    #agricultura .flex .quadro {
-        display: grid;
-    }
-
-    #agricultura .segundoQuadro {
-        
-        width: 0%;
+        margin-top: 30px;
+        margin-bottom: 50px;
     }
 
     #agricultura .flex.two img {
+        width: 100%;
+        height: 50%;
+        margin-top: 30px;
     }
 
- /* AGRICULTURA E ENERGIA */
+    #agricultura .flex.quadro {
+        display: block;
+    }
+
+    #agricultura .primeiroQuadro {
+        width: 100%;
+    }
+
+    #agricultura .segundoQuadro {
+        clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+        width: 100%;
+    }
+
+    #agricultura .primeiroQuadro .txtPrimeiroQuadro {
+        margin-left: 0px;
+    }
+
+    #agricultura .segundoQuadro .txtSegundoQuadro {
+        margin-left: 0px;
+    }
+
+    /* AGRICULTURA E ENERGIA */
 
     #agriculturaEnergia {
         background-image: url(imagens/fundo-natureza.jpg);
@@ -196,6 +246,27 @@
     #agriculturaEnergia .flex .txt h1,
     h2 {
         text-align: center;
+    }
+
+    /* IMPACTOS AMBIENTAIS */
+
+
+    #impactosAmbientais .txtMeioAmbiente {
+        padding: 30px;
+    }
+
+    #impactosAmbientais .txtMeioAmbiente p {
+        text-align: justify;
+    }
+
+    #impactosAmbientais .cartoesNatureza .cartaoMeioAmbiente {
+        width: 300px;
+        height: 530px;
+        margin: 40px auto;
+    }
+
+    #impactosAmbientais .cartoesNatureza {
+        display: block;
     }
 
     /* DESAFIOS */

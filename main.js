@@ -27,7 +27,7 @@ document.getElementById('cardAnterior').addEventListener('click', function () {
 function moverCartao() {
     const slidesCard = document.querySelectorAll('.cardSlide');
     slidesCard.forEach(cardSlide => {
-        cardSlide.style.marginLeft = `-${base * 500}px`;
+        cardSlide.style.marginLeft = `-${base * 16.3}%`;
     });
 }
 
@@ -66,6 +66,40 @@ const observadorUltimo = new IntersectionObserver((entries) => {
 });
 
 observadorUltimo.observe(ultimoSlide);
+
+// Configuração dos botoes cards tecnologia Media query;
+
+function reajusteTela() {
+    if (window.matchMedia("(max-width: 1000px)").matches) {
+
+        let base = 0;
+
+        document.getElementById('proximoCard').addEventListener('click', function () {
+            const slidesCard = document.querySelectorAll('.cardSlide');
+            if (base < slidesCard.length - 1) {
+                base++;
+                moverCartao();
+            }
+        });
+
+        document.getElementById('cardAnterior').addEventListener('click', function () {
+            if (base > 0) {
+                base--;
+                moverCartao();
+            }
+        });
+
+        function moverCartao() {
+            const slidesCard = document.querySelectorAll('.cardSlide');
+            slidesCard.forEach(cardSlide => {
+                cardSlide.style.marginLeft = `-${base * 16.7}%`;
+            });
+        }
+    }
+}
+
+window.addEventListener('resize', reajusteTela);
+reajusteTela();
 
 // Configuração do carrossel;
 
