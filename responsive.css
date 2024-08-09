@@ -147,3 +147,69 @@
         margin-bottom: 0px;
     }
 }
+
+/* PAGINA */
+
+@media screen and (max-width: 1290px) {
+
+    /* AGRICULTURA */
+
+    #agricultura .flex {
+        display: block;
+    }
+
+    #agricultura img {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #agricultura .flex .quadro {
+        display: grid;
+    }
+
+    #agricultura .segundoQuadro {
+        
+        width: 0%;
+    }
+
+    #agricultura .flex.two img {
+    }
+
+ /* AGRICULTURA E ENERGIA */
+
+    #agriculturaEnergia {
+        background-image: url(imagens/fundo-natureza.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #agriculturaEnergia .imagemNatureza {
+        display: none;
+    }
+
+    #agriculturaEnergia .flex .txt {
+        padding: 20px;
+    }
+
+    #agriculturaEnergia .flex .txt h1,
+    h2 {
+        text-align: center;
+    }
+
+    /* DESAFIOS */
+
+    #desafios .flex {
+        display: block;
+    }
+
+    #desafios .flex .txtDesafios {
+        max-width: 360px;
+        margin-bottom: 30px;
+    }
+
+    #desafios .flex img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+/* FONTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Magra:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --cor-01: #00FA9F;
+    --cor-02: #23CF90;
+    --cor-03: #37A57D;
+    --cor-04: #3E7B62;
+    --cor-05: #AEC7B9;
+
+    --textos: 'magra';
+    --titulos: 'roboto';
+}
+
+/* ESTILO DA AGRICULTURA */
+
+#agricultura p,
+li {
+    text-align: justify;
+}
+
+#agricultura h1 {
+    padding-bottom: 40px;
+}
+
+#agricultura img {
+    margin-bottom: 70px;
+    margin-left: 50px;
+}
+
+#agricultura .txtAgricultura1 ol li {
+    padding: 10px 0px;
+}
+
+#agricultura ul {
+    padding-top: 20px;
+}
+
+#agricultura .flex.two img {
+    width: 640px;
+    height: 500px;
+}
+
+#agricultura .quadroVs {
+    background-color: var(--cor-05);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, .5);
+    border-radius: 15px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#agricultura .quadroVs:hover{
+    transform: scale(1.05);
+}
+
+#agricultura .quadroVs .interface {
+    padding: 50px;
+}
+
+#agricultura .flex.quadro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#agricultura .flex.quadro ul li {
+    list-style-type: circle;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#agricultura .primeiroQuadro {
+    width: 45%;
+}
+
+#agricultura .primeiroQuadro .txtPrimeiroQuadro {
+    margin-left: 110px;
+}
+
+#agricultura .segundoQuadro {
+    padding: 40px;
+    background-color: #00FA9F;
+    clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+    width: 55%;
+}
+
+#agricultura .segundoQuadro .txtSegundoQuadro {
+    margin-left: 110px;
+}
+
+/* AGRICULTURA E ENERGIA */
+
+#agriculturaEnergia {
+    background-color: var(--cor-05);
+    margin-bottom: 150px;
+}
+
+#agriculturaEnergia .imagemNatureza {
+    width: 145%;
+    height: 100vh;
+    background-image: url(imagens/fundo-natureza.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#agriculturaEnergia .txt {
+    background-color: white;
+    margin: 50px;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: justify;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, .5);
+    max-height: 1580px;
+}
+
+#agriculturaEnergia .txt h1, h2{
+    padding: 30px;
+}
+
+/* ESTILO DOS DESAFIOS */
+
+#desafios .txtDesafios {
+    width: 600px;
+    padding-right: 50px;
+    text-align: justify;
+}

@@ -167,7 +167,7 @@ header i {
 }
 
 .btnMenuEscondido:hover .menuEscondido {
-    height: 170px;
+    height: 140px;
 }
 
 header.rolagem .btnMenuEscondido:hover .menuEscondido {
@@ -449,7 +449,7 @@ header .menuMobile .btnHanburguer {
     box-shadow: 0 0 8px rgba(78, 78, 78, 0.552);
 }
 
-.cartoesBiotecnologia .cartaoBiotecnologia .conteudoCartaoBiotecnologia  i{
+.cartoesBiotecnologia .cartaoBiotecnologia .conteudoCartaoBiotecnologia i {
     font-size: 80px;
     margin-bottom: 40px;
 }
@@ -460,7 +460,7 @@ header .menuMobile .btnHanburguer {
     margin: 0px 40px;
 }
 
-.cartoesBiotecnologia .cartaoBiotecnologia .conteudoCartaoBiotecnologia p{
+.cartoesBiotecnologia .cartaoBiotecnologia .conteudoCartaoBiotecnologia p {
     text-align: justify;
     font-size: 18px;
 }
